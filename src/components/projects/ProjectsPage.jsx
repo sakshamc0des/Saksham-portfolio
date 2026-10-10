@@ -27,7 +27,7 @@ export default function ProjectsPage() {
   return (
     <section id="proj">
       <h2>Projects</h2>
-      <p className="lead" style={{ marginTop: -8 }}>Drag, scroll or shift+scroll to explore. Click an object to open it.</p>
+      <p className="lead" style={{ marginTop: -8 }}>Explore the projects. Tap or click an object to open its details.</p>
       <div className="pjwrap" ref={wr} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onPointerLeave={up}
         onClickCapture={(e) => { if (moved.current > 6) { e.preventDefault(); e.stopPropagation(); } }}>
         <div className="pjstage" ref={st}>
